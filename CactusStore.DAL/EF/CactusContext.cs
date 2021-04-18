@@ -1,5 +1,5 @@
-﻿using CactusStore.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using System.Data.Entity;
+using CactusStore.Domain.Entities;
 
 namespace CactusStore.DAL.EF
 {
@@ -8,10 +8,24 @@ namespace CactusStore.DAL.EF
         public DbSet<Cactus> Cactuses { get; set; }
         public DbSet<Order> Orders { get; set; }
 
-        public CactusContext(DbContextOptions<CactusContext> options)
-            : base(options)
+        static CactusContext()
         {
-            Database.EnsureCreated();
+            Database.SetInitializer<CactusContext>(new StoreDbInitializer());
+        }
+        public CactusContext(string connectionString)
+            : base(connectionString)
+        {
+        }
+    }
+
+    public class StoreDbInitializer : DropCreateDatabaseIfModelChanges<CactusContext>
+    {
+        protected override void Seed(CactusContext db)
+        {
+            db.Cactuses.Add(new Cactus { Name = "Опунция", Country = "Америка", Price = 800 });
+            db.Cactuses.Add(new Cactus { Name = "Эхинокактус Грузона", Country = "Мексика", Price = 550 });
+            db.Cactuses.Add(new Cactus { Name = "Апорокактус плетевидный", Country = "Мексика", Price = 1100 });
+            db.SaveChanges();
         }
     }
 }

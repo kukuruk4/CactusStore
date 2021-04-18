@@ -1,28 +1,28 @@
 ﻿using System;
 using CactusStore.DAL.EF;
 using CactusStore.DAL.Interfaces;
+using CactusStore.DAL.Repositories;
 using CactusStore.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
 
-namespace CactusStore.DAL.Repositories
+namespace NLayerApp.DAL.Repositories
 {
-    public class EFUnitOfWork
+    public class EFUnitOfWork : IUnitOfWork
     {
         private CactusContext db;
-        private CactusRepository cactusRepository;
+        private CactusRepository phoneRepository;
         private OrderRepository orderRepository;
 
-        public EFUnitOfWork(CactusContext context)
+        public EFUnitOfWork(string connectionString)
         {
-            db = context;
+            db = new CactusContext(connectionString);
         }
-        public IRepository<Cactus> Phones
+        public IRepository<Cactus> Cactuses
         {
             get
             {
-                if (cactusRepository == null)
-                    cactusRepository = new CactusRepository(db);
-                return cactusRepository;
+                if (phoneRepository == null)
+                    phoneRepository = new CactusRepository(db);
+                return phoneRepository;
             }
         }
 

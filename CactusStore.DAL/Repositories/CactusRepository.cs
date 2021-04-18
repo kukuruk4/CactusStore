@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using CactusStore.DAL.EF;
 using CactusStore.DAL.Interfaces;
 using CactusStore.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace CactusStore.DAL.Repositories
 {
