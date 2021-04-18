@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CactusStore.Domain.Entities
+namespace CactusStore.DAL.Entities
 {
     public class Order
     {
@@ -14,5 +14,4 @@ namespace CactusStore.Domain.Entities
 
         public DateTime Date { get; set; }
     }
-
 }

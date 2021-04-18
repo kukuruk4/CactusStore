@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity;
-using CactusStore.Domain.Entities;
+using CactusStore.DAL.Entities;
 
 namespace CactusStore.DAL.EF
 {

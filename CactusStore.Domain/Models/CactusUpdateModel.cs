@@ -1,14 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using CactusStore.Domain.Contracts;
 
-namespace CactusStore.Domain.Entities
+namespace CactusStore.Domain.Models
 {
-    public class Cactus
+    public class CactusUpdateModel : ICactusIdentity
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Country { get; set; }
         public decimal Price { get; set; }
-        public ICollection<Order> Orders { get; set; }
     }
-
 }

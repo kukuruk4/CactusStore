@@ -1,5 +1,5 @@
 ﻿using System;
-using CactusStore.Domain.Entities;
+using CactusStore.DAL.Entities;
 
 namespace CactusStore.DAL.Interfaces
 {

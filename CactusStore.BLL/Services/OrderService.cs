@@ -6,7 +6,7 @@ using CactusStore.BLL.DTO;
 using CactusStore.BLL.Infrastructure;
 using CactusStore.BLL.Interfaces;
 using CactusStore.DAL.Interfaces;
-using CactusStore.Domain.Entities;
+using CactusStore.DAL.Entities;
 
 namespace CactusStore.BLL.Services
 {

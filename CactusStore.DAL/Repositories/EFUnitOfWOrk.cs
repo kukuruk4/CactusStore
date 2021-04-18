@@ -2,7 +2,7 @@
 using CactusStore.DAL.EF;
 using CactusStore.DAL.Interfaces;
 using CactusStore.DAL.Repositories;
-using CactusStore.Domain.Entities;
+using CactusStore.DAL.Entities;
 
 namespace NLayerApp.DAL.Repositories
 {
