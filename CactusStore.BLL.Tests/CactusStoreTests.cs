@@ -15,8 +15,8 @@ namespace CactusStore.BLL.Tests
         {
             //ARRANGE
 
-            var discount = new Discount(10);
-            decimal sum = 50000;
+            var discount = new Discount((decimal)0.2);
+            decimal sum = 5000;
 
             //ACT
 
@@ -24,7 +24,7 @@ namespace CactusStore.BLL.Tests
 
 
             //ASSERT
-            Assert.AreEqual(4000, sum);
+            Assert.AreEqual(5000, sum);
         }
     }
 }
