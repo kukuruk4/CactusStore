@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CactusStore.BLL", "CactusSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CactusStore.Domain", "CactusStore.Domain\CactusStore.Domain.csproj", "{383EBF4A-A72B-494B-8A7A-C667B029AA13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CactusStore.BLL.Tests", "CactusStore.BLL.Tests\CactusStore.BLL.Tests.csproj", "{BF184BE0-DEA4-4080-8079-D1EA97FF9C28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{383EBF4A-A72B-494B-8A7A-C667B029AA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{383EBF4A-A72B-494B-8A7A-C667B029AA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{383EBF4A-A72B-494B-8A7A-C667B029AA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF184BE0-DEA4-4080-8079-D1EA97FF9C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF184BE0-DEA4-4080-8079-D1EA97FF9C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF184BE0-DEA4-4080-8079-D1EA97FF9C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF184BE0-DEA4-4080-8079-D1EA97FF9C28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
