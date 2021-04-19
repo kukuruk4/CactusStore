@@ -11,10 +11,9 @@ namespace NLayerApp.DAL.Repositories
         private CactusContext db;
         private CactusRepository phoneRepository;
         private OrderRepository orderRepository;
-
-        public EFUnitOfWork(string connectionString)
+        public EFUnitOfWork(CactusContext context)
         {
-            db = new CactusContext(connectionString);
+            db = context;
         }
         public IRepository<Cactus> Cactuses
         {

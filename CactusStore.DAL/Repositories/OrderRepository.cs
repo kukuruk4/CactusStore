@@ -4,7 +4,7 @@ using System.Linq;
 using CactusStore.DAL.EF;
 using CactusStore.DAL.Interfaces;
 using CactusStore.DAL.Entities;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace CactusStore.DAL.Repositories
 {
